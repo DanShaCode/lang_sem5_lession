@@ -23,20 +23,19 @@
 // string s11 = string.Join("----", age);
 // Console.WriteLine(s11);
 
+// string s = "1, 2, 3, 4, 5, 6, 7.";
 
-string s = "1, 2, 3, 4, 5, 6, 7.";
+// string[] nums = s.Split(new char [] {' ', '.', ','}, StringSplitOptions.RemoveEmptyEntries);
 
-string[] nums = s.Split(new char [] {' ', '.', ','}, StringSplitOptions.RemoveEmptyEntries);
+// foreach (var num in nums)
+// {
+//     Console.WriteLine($"Значение: {num}");
+// }
 
-foreach (var num in nums)
-{
-    Console.WriteLine($"Значение: {num}");
-}
+// int[] n = nums.Select(Int32.Parse).ToArray();
+// foreach (var i in n)
+// {
+//     Console.Write($"{i} ");
+// }
 
-int[] n = nums.Select(Int32.Parse).ToArray();
-foreach (var i in n)
-{
-    Console.Write($"{i} ");
-}
-
-int[] num = Array.ConvertAll(Console.ReadLine().Split(), int.Parse)
+// int[] num = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
